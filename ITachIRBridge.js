@@ -54,6 +54,10 @@ var ITachIRBridge = function (initd, native) {
         }
     );
     self.native = native;   
+    self.connectd = {
+        data_out: function(paramd) {
+        },
+    }
 
     if (self.native) {
         self.queue = _.queue("ITachIRBridge");
@@ -139,6 +143,8 @@ ITachIRBridge.prototype.connect = function (connectd) {
     }
 
     self._validate_connect(connectd);
+
+    self.connectd = _.defaults(connectd, self.connectd, {});
 };
 
 ITachIRBridge.prototype._forget = function () {
@@ -181,7 +187,8 @@ ITachIRBridge.prototype.push = function (pushd, done) {
 
     self._validate_push(pushd);
 
-    if (!pushd.command) {
+    if (!self.connectd.data_out) {
+        done(new Error("'data_out' not implemented"));
         return;
     }
 
@@ -190,26 +197,44 @@ ITachIRBridge.prototype.push = function (pushd, done) {
         pushd: pushd
     }, "push");
 
-    var qitem = {
-        // if you set "id", new pushes will unqueue old pushes with the same id
-        // id: self.number, 
-        run: function () {
-            self._itach().send({
-                ir: pushd.command,
-                module: "3"
-            }, function callback(error) {
-                if (error) {
-                    console.log("#", error);
-                }
-                done();
-            });
-            self.queue.finished(qitem);
-        },
-        coda: function() {
-            // done();
-        },
+    var paramd = {
+        rawd: {},
+        cookd: pushd,
+        scratchd: self.scratchd,
     };
-    self.queue.add(qitem);
+    self.connectd.data_out(paramd);
+
+    var irs = paramd.rawd.irs;
+    if (!irs) {
+        done();
+        return;
+    }
+
+    var count = 0;
+
+    irs.map(function(ir) {
+        ++count;
+        var qitem = {
+            run: function () {
+                self._itach().send({
+                    ir: ir,
+                    module: "3"
+                }, function callback(error) {
+                    if (error) {
+                        console.log("#", error);
+                    }
+                });
+
+                self.queue.finished(qitem);
+            },
+            coda: function() {
+                if (--count === 0) {
+                    done();
+                }
+            },
+        };
+        self.queue.add(qitem);
+    });
 };
 
 /**

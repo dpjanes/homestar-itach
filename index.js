@@ -25,6 +25,7 @@
 exports.Bridge = require('./ITachIRBridge').Bridge;
 exports.bindings = [
     require('./models/ITachIR').binding,
+    require('./models/IRAppleTV').binding,
 ];
 
 exports.iotdb = require("iotdb");
