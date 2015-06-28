@@ -4,7 +4,7 @@
         "url": "https://github.com/dpjanes/homestar-itach-ir/issues"
     }, 
     "dependencies": {
-        "node-itach": "~0.4.5"
+        "node-itach": "~1.1.0"
     }, 
     "description": "HomeStar / IOTDB Bridge for iTach IR Controllers", 
     "devDependencies": {
@@ -24,7 +24,7 @@
     "main": "index.js", 
     "name": "homestar-itach-ir", 
     "peerDependencies": {
-        "iotdb": ">=0.6.3"
+        "iotdb": "~0.7.12"
     }, 
     "private": false, 
     "repository": {
@@ -34,5 +34,5 @@
     "scripts": {
         "test": "grunt"
     }, 
-    "version": "0.0.1"
+    "version": "0.0.2"
 }
