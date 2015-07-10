@@ -34,8 +34,6 @@ var logger = bunyan.createLogger({
     module: 'ITachIRBridge',
 });
 
-var arping = false;
-var ipd = {};
 
 /**
  *  See {iotdb.bridge.Bridge#Bridge} for documentation.
@@ -51,6 +49,7 @@ var ITachIRBridge = function (initd, native) {
             host: null,
             mac: null,
             arp: true,
+            ipd: {},
         }
     );
     self.native = native;   
@@ -62,6 +61,8 @@ var ITachIRBridge = function (initd, native) {
     if (self.native) {
         self.queue = _.queue("ITachIRBridge");
     }
+
+    self.arping = false;
 };
 
 ITachIRBridge.prototype = new iotdb.Bridge();
@@ -92,13 +93,14 @@ ITachIRBridge.prototype.discover = function () {
 ITachIRBridge.prototype._discover_arp = function () {
     var self = this;
 
-    if (arping) {
+    if (self.arping) {
         return;
     }
-    arping = true;
+    self.arping = true;
 
     logger.info({
         method: "_discover_arp",
+        initd: self.initd,
     }, "called");
 
     arp.browser({
@@ -113,11 +115,11 @@ ITachIRBridge.prototype._discover_arp = function () {
 
         if (!arpd.mac.match(/^00:0C:1E:/)) {
             return;
-        } if (ipd[arpd.ip]) {
+        } if (self.initd.ipd[arpd.ip]) {
             return;
         }
 
-        ipd[arpd.ip] = true;
+        self.initd.ipd[arpd.ip] = true;
 
         self._discover_host(_.defaults({
             host: arpd.ip,
@@ -142,6 +144,7 @@ ITachIRBridge.prototype.connect = function (connectd) {
         return;
     }
 
+
     self._validate_connect(connectd);
 
     self.connectd = _.defaults(connectd, self.connectd, {});
@@ -156,6 +159,8 @@ ITachIRBridge.prototype._forget = function () {
     logger.info({
         method: "_forget"
     }, "called");
+
+    self.initd.ipd[self.initd.host] = false;
 
     self.native = null;
     self.pulled();
@@ -210,10 +215,9 @@ ITachIRBridge.prototype.push = function (pushd, done) {
         return;
     }
 
-    var count = 0;
+    var count = irs.length;
 
     irs.map(function(ir) {
-        ++count;
         var qitem = {
             run: function () {
                 self._itach().send({
