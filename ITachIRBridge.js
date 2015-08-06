@@ -263,11 +263,11 @@ ITachIRBridge.prototype.meta = function () {
     }
 
     return {
-        "iot:thing": _.id.thing_urn.unique("ITachIR", self.initd.mac.replace(/:/g, '')),
+        "iot:thing-id": _.id.thing_urn.unique("ITachIR", self.initd.mac.replace(/:/g, '')),
         "schema:name": "ITachIR",
 
         // "iot:number": self.initd.number,
-        // "iot:device": _.id.thing_urn.unique("ITachIR", self.native.uuid),
+        // "iot:device-id": _.id.thing_urn.unique("ITachIR", self.native.uuid),
         // "schema:manufacturer": "",
         // "schema:model": "",
     };

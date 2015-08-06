@@ -18,9 +18,9 @@ exports.Model = iotdb.make_model('ITachIR')
 exports.binding = {
     bridge: require('../ITachIRBridge').Bridge,
     model: exports.Model,
+    discover: false,
     connectd: {
         data_out: function(paramd) {
-
             if (paramd.cookd.command) {
                 paramd.rawd.irs = [ paramd.cookd.command, ];
             }

@@ -37,6 +37,7 @@ exports.Model = iotdb.make_model('IRAppleTV')
 
 exports.binding = {
     bridge: require('../ITachIRBridge').Bridge,
+    discover: false,
     model: exports.Model,
     metad: {
         "schema:name": "Apple TV",
