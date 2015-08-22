@@ -266,7 +266,7 @@ ITachIRBridge.prototype.meta = function () {
         "iot:thing-id": _.id.thing_urn.unique("ITachIR", self.initd.mac.replace(/:/g, '')),
         "schema:name": "ITachIR",
 
-        // "iot:number": self.initd.number,
+        // "iot:thing-number": self.initd.number,
         // "iot:device-id": _.id.thing_urn.unique("ITachIR", self.native.uuid),
         // "schema:manufacturer": "",
         // "schema:model": "",
