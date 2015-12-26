@@ -1,0 +1,150 @@
+CREATE MODEL Irlgtv WITH
+    schema:name = "IR LG TV"
+ATTRIBUTE "channel.down" WITH
+    schema:name = "channel.down",
+    iot:purpose = iot-purpose:channel.down,
+    iot:type = iot:type.null,
+    iot:read = false,
+    iot:write = true
+ATTRIBUTE "channel.return" WITH
+    schema:name = "channel.return",
+    iot:purpose = iot-purpose:channel.return,
+    iot:type = iot:type.null,
+    iot:read = false,
+    iot:write = true
+ATTRIBUTE "channel.up" WITH
+    schema:name = "channel.up",
+    iot:purpose = iot-purpose:channel.up,
+    iot:type = iot:type.null,
+    iot:read = false,
+    iot:write = true
+ATTRIBUTE "cursor.down" WITH
+    schema:name = "cursor.down",
+    iot:purpose = iot-purpose:cursor.down,
+    iot:type = iot:type.null,
+    iot:read = false,
+    iot:write = true
+ATTRIBUTE "cursor.enter" WITH
+    schema:name = "cursor.enter",
+    iot:purpose = iot-purpose:cursor.enter,
+    iot:type = iot:type.null,
+    iot:read = false,
+    iot:write = true
+ATTRIBUTE "cursor.leave" WITH
+    schema:name = "cursor.leave",
+    iot:purpose = iot-purpose:cursor.leave,
+    iot:type = iot:type.null,
+    iot:read = false,
+    iot:write = true
+ATTRIBUTE "cursor.left" WITH
+    schema:name = "cursor.left",
+    iot:purpose = iot-purpose:cursor.left,
+    iot:type = iot:type.null,
+    iot:read = false,
+    iot:write = true
+ATTRIBUTE "cursor.right" WITH
+    schema:name = "cursor.right",
+    iot:purpose = iot-purpose:cursor.right,
+    iot:type = iot:type.null,
+    iot:read = false,
+    iot:write = true
+ATTRIBUTE "cursor.up" WITH
+    schema:name = "cursor.up",
+    iot:purpose = iot-purpose:cursor.up,
+    iot:type = iot:type.null,
+    iot:read = false,
+    iot:write = true
+ATTRIBUTE "on.false" WITH
+    schema:name = "on.false",
+    iot:purpose = iot-purpose:on.false,
+    iot:type = iot:type.null,
+    iot:read = false,
+    iot:write = true
+ATTRIBUTE "on.toggle" WITH
+    schema:name = "on.toggle",
+    iot:purpose = iot-purpose:on.toggle,
+    iot:type = iot:type.null,
+    iot:read = false,
+    iot:write = true
+ATTRIBUTE "on.true" WITH
+    schema:name = "on.true",
+    iot:purpose = iot-purpose:on.true,
+    iot:type = iot:type.null,
+    iot:read = false,
+    iot:write = true
+ATTRIBUTE "shuttle.backward" WITH
+    schema:name = "shuttle.backward",
+    iot:purpose = iot-purpose:shuttle.backward,
+    iot:type = iot:type.null,
+    iot:read = false,
+    iot:write = true
+ATTRIBUTE "shuttle.forward" WITH
+    schema:name = "shuttle.forward",
+    iot:purpose = iot-purpose:shuttle.forward,
+    iot:type = iot:type.null,
+    iot:read = false,
+    iot:write = true
+ATTRIBUTE "shuttle.pause" WITH
+    schema:name = "shuttle.pause",
+    iot:purpose = iot-purpose:shuttle.pause,
+    iot:type = iot:type.null,
+    iot:read = false,
+    iot:write = true
+ATTRIBUTE "shuttle.play" WITH
+    schema:name = "shuttle.play",
+    iot:purpose = iot-purpose:shuttle.play,
+    iot:type = iot:type.null,
+    iot:read = false,
+    iot:write = true
+ATTRIBUTE "shuttle.stop" WITH
+    schema:name = "shuttle.stop",
+    iot:purpose = iot-purpose:shuttle.stop,
+    iot:type = iot:type.null,
+    iot:read = false,
+    iot:write = true
+ATTRIBUTE "tray.toggle" WITH
+    schema:name = "tray.toggle",
+    iot:purpose = iot-purpose:tray.toggle,
+    iot:type = iot:type.null,
+    iot:read = false,
+    iot:write = true
+ATTRIBUTE "volume.down" WITH
+    schema:name = "volume.down",
+    iot:purpose = iot-purpose:volume.down,
+    iot:type = iot:type.null,
+    iot:read = false,
+    iot:write = true
+ATTRIBUTE "volume.up" WITH
+    schema:name = "volume.up",
+    iot:purpose = iot-purpose:volume.up,
+    iot:type = iot:type.null,
+    iot:read = false,
+    iot:write = true
+ATTRIBUTE band WITH
+    schema:name = "band",
+    iot:purpose = iot-purpose:band,
+    iot:type = iot:type.string,
+    iot:enumeration = iot-purpose:band.antenna,
+    iot:enumeration = iot-purpose:band.component#1,
+    iot:enumeration = iot-purpose:band.component#2,
+    iot:enumeration = iot-purpose:band.component#3,
+    iot:enumeration = iot-purpose:band.dvi,
+    iot:enumeration = iot-purpose:band.hdmi#1,
+    iot:enumeration = iot-purpose:band.hdmi#2,
+    iot:enumeration = iot-purpose:band.hdmi#3,
+    iot:enumeration = iot-purpose:band.hdmi#4,
+    iot:enumeration = iot-purpose:band.pc,
+    iot:enumeration = iot-purpose:band.rgb,
+    iot:enumeration = iot-purpose:band.rgb#1,
+    iot:enumeration = iot-purpose:band.rgb#2,
+    iot:enumeration = iot-purpose:band.s-video,
+    iot:enumeration = iot-purpose:band.s-video#1,
+    iot:enumeration = iot-purpose:band.s-video#2,
+    iot:enumeration = iot-purpose:band.tv,
+    iot:enumeration = iot-purpose:band.usb,
+    iot:enumeration = iot-purpose:band.video#1,
+    iot:enumeration = iot-purpose:band.video#2,
+    iot:enumeration = iot-purpose:band.video#3,
+    iot:enumeration = iot-purpose:band.video#4,
+    iot:enumeration = iot-purpose:band.video#5
+;

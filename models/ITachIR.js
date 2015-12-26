@@ -17,7 +17,7 @@ exports.Model = iotdb.make_model('ITachIR')
 
 exports.binding = {
     bridge: require('../ITachIRBridge').Bridge,
-    model: exports.Model,
+    model: require('./ITachIr.json'),
     discover: false,
     connectd: {
         data_out: function(paramd) {

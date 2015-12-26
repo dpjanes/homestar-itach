@@ -1,0 +1,43 @@
+{
+  "@context": {
+    "@base": "file:///i-tach-ir",
+    "@vocab": "file:///i-tach-ir#",
+    "iot": "https://iotdb.org/pub/iot#",
+    "schema": "http://schema.org/",
+    "iot-purpose": "https://iotdb.org/pub/iot-purpose#",
+    "iot-facet": "https://iotdb.org/pub/iot-facet#",
+    "iot:facet": {
+      "@id": "https://iotdb.org/pub/iot#facet",
+      "@type": "@id"
+    },
+    "iot:purpose": {
+      "@id": "https://iotdb.org/pub/iot#purpose",
+      "@type": "@id"
+    },
+    "iot:type": {
+      "@id": "https://iotdb.org/pub/iot#type",
+      "@type": "@id"
+    }
+  },
+  "@id": "",
+  "@type": "iot:Model",
+  "schema:name": "ITachIR",
+  "schema:description": "iTach IR Controller",
+  "iot:facet": [
+    "iot-facet:bridge",
+    "iot-facet:bridge.ir"
+  ],
+  "iot:attribute": [
+    {
+      "@type": "iot:Attribute",
+      "@id": "#command",
+      "schema:name": "value",
+      "iot:purpose": "iot-purpose:command",
+      "iot:type": "iot:type.string",
+      "iot:read": false,
+      "iot:write": true,
+      "iot:sensor": false,
+      "iot:actuator": true
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+CREATE MODEL IrAppleTv WITH
+    schema:name = "IR Apple TV",
+    schema:description = "Apple TV via IR channel",
+    iot:facet = iot-facet:bridge,
+    iot:facet = iot-facet:bridge.media
+ATTRIBUTE "cursor.down" WITH
+    schema:name = "cursor.down",
+    iot:purpose = iot-purpose:cursor.down,
+    iot:type = iot:type.null,
+    iot:read = false,
+    iot:write = true
+ATTRIBUTE "cursor.left" WITH
+    schema:name = "cursor.left",
+    iot:purpose = iot-purpose:cursor.left,
+    iot:type = iot:type.null,
+    iot:read = false,
+    iot:write = true
+ATTRIBUTE "cursor.right" WITH
+    schema:name = "cursor.right",
+    iot:purpose = iot-purpose:cursor.right,
+    iot:type = iot:type.null,
+    iot:read = false,
+    iot:write = true
+ATTRIBUTE "cursor.up" WITH
+    schema:name = "cursor.up",
+    iot:purpose = iot-purpose:cursor.up,
+    iot:type = iot:type.null,
+    iot:read = false,
+    iot:write = true
+ATTRIBUTE "cursor.enter" WITH
+    schema:name = "cursor.enter",
+    iot:purpose = iot-purpose:cursor.enter,
+    iot:type = iot:type.null,
+    iot:read = false,
+    iot:write = true
+ATTRIBUTE "cursor.leave" WITH
+    schema:name = "cursor.leave",
+    iot:purpose = iot-purpose:cursor.leave,
+    iot:type = iot:type.null,
+    iot:read = false,
+    iot:write = true
+ATTRIBUTE "shuttle.play" WITH
+    schema:name = "shuttle.play",
+    iot:purpose = iot-purpose:shuttle.play,
+    iot:type = iot:type.null,
+    iot:read = false,
+    iot:write = true
+ATTRIBUTE "shuttle.pause" WITH
+    schema:name = "shuttle.pause",
+    iot:purpose = iot-purpose:shuttle.pause,
+    iot:type = iot:type.null,
+    iot:read = false,
+    iot:write = true
+;

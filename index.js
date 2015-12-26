@@ -27,6 +27,7 @@ exports.bindings = [
     require('./models/ITachIR').binding,
     require('./models/IRAppleTV').binding,
     require('./models/IRLGTV').binding,
+    require('./models/IRSonyBDP').binding,
 ];
 
 exports.iotdb = require("iotdb");

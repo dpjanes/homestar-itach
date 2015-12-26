@@ -21,24 +21,10 @@ var cmdd = {
 
 cmdd["shuttle.pause"] = cmdd["shuttle.play"];
 
-exports.Model = iotdb.make_model('IRAppleTV')
-    .facet(":bridge.media")
-    .name("IR Apple TV")
-    .description("Apple TV via IR channel")
-    .action("iot-purpose:cursor.down")
-    .action("iot-purpose:cursor.left")
-    .action("iot-purpose:cursor.right")
-    .action("iot-purpose:cursor.up")
-    .action("iot-purpose:cursor.enter")
-    .action("iot-purpose:cursor.leave")
-    .action("iot-purpose:shuttle.play")
-    .action("iot-purpose:shuttle.pause")
-    .make();
-
 exports.binding = {
     bridge: require('../ITachIRBridge').Bridge,
     discover: false,
-    model: exports.Model,
+    model: require('./IrAppleTv.json'),
     metad: {
         "schema:name": "Apple TV",
         "schema:model": "http://store.apple.com/ca/appletv",

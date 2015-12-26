@@ -1,0 +1,12 @@
+CREATE MODEL ITachIr WITH
+    schema:name = "ITachIR",
+    schema:description = "iTach IR Controller",
+    iot:facet = iot-facet:bridge,
+    iot:facet = iot-facet:bridge.ir
+ATTRIBUTE command WITH
+    schema:name = "value",
+    iot:purpose = iot-purpose:command,
+    iot:type = iot:type.string,
+    iot:read = false,
+    iot:write = true
+;
