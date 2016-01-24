@@ -24,12 +24,11 @@
 
 var iotdb = require('iotdb');
 var _ = iotdb._;
-var bunyan = iotdb.bunyan;
 
 var itach = require('node-itach');
 var arp = require('iotdb-arp');
 
-var logger = bunyan.createLogger({
+var logger = iotdb.logger({
     name: 'homestar-itach-ir',
     module: 'ITachIRBridge',
 });
