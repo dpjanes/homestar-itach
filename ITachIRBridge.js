@@ -51,14 +51,14 @@ var ITachIRBridge = function (initd, native) {
             ipd: {},
         }
     );
-    self.native = native;   
+    self.native = native;
     self.connectd = {
-        data_out: function(paramd) {
+        data_out: function (paramd) {
             if (paramd.cookd.command !== undefined) {
                 paramd.rawd.irs = _.ld.list(paramd.cookd, "command", []);
             }
         },
-    }
+    };
 
     if (self.native) {
         self.queue = _.queue("ITachIRBridge");
@@ -112,12 +112,13 @@ ITachIRBridge.prototype._discover_arp = function () {
         if (error) {
             return;
         } else if (!arpd) {
-            return
+            return;
         }
 
         if (!arpd.mac.match(/^00:0C:1E:/)) {
             return;
-        } if (self.initd.ipd[arpd.ip]) {
+        }
+        if (self.initd.ipd[arpd.ip]) {
             return;
         }
 
@@ -223,7 +224,7 @@ ITachIRBridge.prototype.push = function (pushd, done) {
 
     var count = irs.length;
 
-    irs.map(function(ir) {
+    irs.map(function (ir) {
         var qitem = {
             run: function () {
                 self._itach().send({
@@ -237,7 +238,7 @@ ITachIRBridge.prototype.push = function (pushd, done) {
 
                 self.queue.finished(qitem);
             },
-            coda: function() {
+            coda: function () {
                 if (--count === 0) {
                     done();
                 }
@@ -305,7 +306,7 @@ ITachIRBridge.prototype._itach = function () {
         _itachd[ip] = new itach({
             host: ip,
         });
-    };
+    }
 
     return _itachd[ip];
 };
@@ -314,4 +315,3 @@ ITachIRBridge.prototype._itach = function () {
  *  API
  */
 exports.Bridge = ITachIRBridge;
-

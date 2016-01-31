@@ -15,12 +15,12 @@ if (process.argv.length > 2) {
 }
 
 var things = iot.connect('IRAppleTV');
-things.on("thing", function(thing) {
+things.on("thing", function (thing) {
     console.log("+", "discovered", thing.thing_id(), "\n ", thing.state("meta"));
 
     things.set(command, true);
     setTimeout(process.exit, 2 * 1000);
 });
-things.on("meta", function(thing) {
+things.on("meta", function (thing) {
     console.log("+", "meta", thing.thing_id(), "\n ", thing.state("meta"));
 });
