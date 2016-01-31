@@ -54,6 +54,9 @@ var ITachIRBridge = function (initd, native) {
     self.native = native;   
     self.connectd = {
         data_out: function(paramd) {
+            if (paramd.cookd.command !== undefined) {
+                paramd.rawd.irs = _.ld.list(paramd.cookd, "command", []);
+            }
         },
     }
 
@@ -143,7 +146,6 @@ ITachIRBridge.prototype.connect = function (connectd) {
         return;
     }
 
-
     self._validate_connect(connectd);
 
     self.connectd = _.defaults(connectd, self.connectd, {});
@@ -210,7 +212,12 @@ ITachIRBridge.prototype.push = function (pushd, done) {
 
     var irs = paramd.rawd.irs;
     if (!irs) {
-        done();
+        logger.error({
+            method: "push",
+            paramd: paramd,
+            cause: "model error - maybe the binding is not set up correctly",
+        }, "expected IR codes");
+        done(new Error('expected IR codes'));
         return;
     }
 

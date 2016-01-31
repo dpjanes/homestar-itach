@@ -13,6 +13,21 @@ var cmdd = {
     "lg.power.off": "sendir,1:1,1,38000,1,69,343,172,21,22,21,22,21,65,21,22,21,22,21,22,21,22,21,22,21,65,21,65,21,22,21,65,21,65,21,65,21,65,21,65,21,65,21,22,21,65,21,22,21,22,21,22,21,65,21,65,21,22,21,65,21,22,21,65,21,65,21,65,21,22,21,22,21,1673,343,86,21,3732",
 }
 
+if (process.argv.length !== 3) {
+    console.log("usage: node connect_arp.js <command>");
+    console.log("");
+    console.log("commands:");
+
+    for (var key in cmdd) {
+        console.log("-", key);
+    };
+
+    process.exit(1);
+}
+
+var command = process.argv[2];
+var sequence = cmdd[command];
+
 var bridge_exemplar = new Bridge({
     arp: true,
 });
@@ -22,8 +37,9 @@ bridge_exemplar.discovered = function (bridge) {
         console.log("+ state-change", state);
     };
     bridge.connect({});
+    console.log("+ send", command);
     bridge.push({
-        command: cmdd["lg.power.on"],
+        command: sequence,
     }, function() {});
 };
 bridge_exemplar.discover();

@@ -4,19 +4,15 @@
  *  David Janes
  *  IOTDB
  *  2015-06-27
+ *
+ *  This will just send the "command"
  */
 
 var iotdb = require("iotdb");
+var _ = iotdb._;
 
 exports.binding = {
     bridge: require('../ITachIRBridge').Bridge,
     model: require('./ITachIr.json'),
-    discover: false,
-    connectd: {
-        data_out: function(paramd) {
-            if (paramd.cookd.command) {
-                paramd.rawd.irs = [ paramd.cookd.command, ];
-            }
-        }
-    },
+    discover: false
 };
