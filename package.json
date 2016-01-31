@@ -4,21 +4,21 @@
         "url": "https://github.com/dpjanes/homestar-itach-ir/issues"
     }, 
     "dependencies": {
-        "iotdb": ">=0.10.0", 
+        "iotdb": ">=0.11.0", 
         "iotdb-arp": "~0.0.5", 
         "node-itach": "~1.1.0"
     }, 
     "description": "HomeStar / IOTDB Bridge for iTach IR Controllers", 
     "devDependencies": {
         "grunt": "~0.4.5", 
-        "grunt-contrib-jshint": "~0.11.3", 
+        "grunt-contrib-jshint": "~0.12.0", 
         "grunt-contrib-nodeunit": "~0.4.1", 
         "grunt-contrib-uglify": "~0.11.0", 
         "grunt-contrib-watch": "~0.6.1", 
         "grunt-jsbeautifier": "~0.2.10", 
         "jshint-stylish": "~2.1.0", 
         "load-grunt-tasks": "~3.4.0", 
-        "request": "~2.67.0"
+        "request": "~2.69.0"
     }, 
     "homepage": "https://homestar.io", 
     "homestar": {}, 
@@ -33,5 +33,5 @@
     "scripts": {
         "test": "grunt"
     }, 
-    "version": "0.0.12"
+    "version": "0.0.13"
 }
