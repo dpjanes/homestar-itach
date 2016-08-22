@@ -1,2 +1,2 @@
 # homestar-itach
-IOTDB / HomeStar Controller for iTach IR Controllers
+[IOTDB](https://github.com/dpjanes/node-iotdb) Bridge for iTach IR Controllers

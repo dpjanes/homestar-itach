@@ -3,7 +3,6 @@
     "@base": "file:///irlgtv",
     "@vocab": "file:///irlgtv#",
     "iot": "https://iotdb.org/pub/iot#",
-    "schema": "http://schema.org/",
     "iot-purpose": "https://iotdb.org/pub/iot-purpose#",
     "iot:purpose": {
       "@id": "https://iotdb.org/pub/iot#purpose",
@@ -13,6 +12,7 @@
       "@id": "https://iotdb.org/pub/iot#type",
       "@type": "@id"
     },
+    "schema": "http://schema.org/",
     "iot:enumeration": {
       "@id": "https://iotdb.org/pub/iot#enumeration",
       "@type": "@id"
@@ -20,234 +20,231 @@
   },
   "@id": "",
   "@type": "iot:Model",
-  "schema:name": "IR LG TV",
   "iot:attribute": [
     {
-      "@type": "iot:Attribute",
       "@id": "#channel.down",
-      "schema:name": "channel.down",
+      "@type": "iot:Attribute",
+      "iot:actuator": true,
       "iot:purpose": "iot-purpose:channel.down",
-      "iot:type": "iot:type.null",
       "iot:read": false,
+      "iot:sensor": true,
+      "iot:type": "iot:type.null",
       "iot:write": true,
-      "iot:sensor": false,
-      "iot:actuator": true
+      "schema:name": "channel.down"
     },
     {
-      "@type": "iot:Attribute",
       "@id": "#channel.return",
-      "schema:name": "channel.return",
+      "@type": "iot:Attribute",
+      "iot:actuator": true,
       "iot:purpose": "iot-purpose:channel.return",
-      "iot:type": "iot:type.null",
       "iot:read": false,
+      "iot:sensor": true,
+      "iot:type": "iot:type.null",
       "iot:write": true,
-      "iot:sensor": false,
-      "iot:actuator": true
+      "schema:name": "channel.return"
     },
     {
-      "@type": "iot:Attribute",
       "@id": "#channel.up",
-      "schema:name": "channel.up",
+      "@type": "iot:Attribute",
+      "iot:actuator": true,
       "iot:purpose": "iot-purpose:channel.up",
-      "iot:type": "iot:type.null",
       "iot:read": false,
+      "iot:sensor": true,
+      "iot:type": "iot:type.null",
       "iot:write": true,
-      "iot:sensor": false,
-      "iot:actuator": true
+      "schema:name": "channel.up"
     },
     {
-      "@type": "iot:Attribute",
       "@id": "#cursor.down",
-      "schema:name": "cursor.down",
+      "@type": "iot:Attribute",
+      "iot:actuator": true,
       "iot:purpose": "iot-purpose:cursor.down",
-      "iot:type": "iot:type.null",
       "iot:read": false,
+      "iot:sensor": true,
+      "iot:type": "iot:type.null",
       "iot:write": true,
-      "iot:sensor": false,
-      "iot:actuator": true
+      "schema:name": "cursor.down"
     },
     {
-      "@type": "iot:Attribute",
       "@id": "#cursor.enter",
-      "schema:name": "cursor.enter",
+      "@type": "iot:Attribute",
+      "iot:actuator": true,
       "iot:purpose": "iot-purpose:cursor.enter",
-      "iot:type": "iot:type.null",
       "iot:read": false,
+      "iot:sensor": true,
+      "iot:type": "iot:type.null",
       "iot:write": true,
-      "iot:sensor": false,
-      "iot:actuator": true
+      "schema:name": "cursor.enter"
     },
     {
-      "@type": "iot:Attribute",
       "@id": "#cursor.leave",
-      "schema:name": "cursor.leave",
+      "@type": "iot:Attribute",
+      "iot:actuator": true,
       "iot:purpose": "iot-purpose:cursor.leave",
-      "iot:type": "iot:type.null",
       "iot:read": false,
+      "iot:sensor": true,
+      "iot:type": "iot:type.null",
       "iot:write": true,
-      "iot:sensor": false,
-      "iot:actuator": true
+      "schema:name": "cursor.leave"
     },
     {
-      "@type": "iot:Attribute",
       "@id": "#cursor.left",
-      "schema:name": "cursor.left",
+      "@type": "iot:Attribute",
+      "iot:actuator": true,
       "iot:purpose": "iot-purpose:cursor.left",
-      "iot:type": "iot:type.null",
       "iot:read": false,
+      "iot:sensor": true,
+      "iot:type": "iot:type.null",
       "iot:write": true,
-      "iot:sensor": false,
-      "iot:actuator": true
+      "schema:name": "cursor.left"
     },
     {
-      "@type": "iot:Attribute",
       "@id": "#cursor.right",
-      "schema:name": "cursor.right",
+      "@type": "iot:Attribute",
+      "iot:actuator": true,
       "iot:purpose": "iot-purpose:cursor.right",
-      "iot:type": "iot:type.null",
       "iot:read": false,
+      "iot:sensor": true,
+      "iot:type": "iot:type.null",
       "iot:write": true,
-      "iot:sensor": false,
-      "iot:actuator": true
+      "schema:name": "cursor.right"
     },
     {
-      "@type": "iot:Attribute",
       "@id": "#cursor.up",
-      "schema:name": "cursor.up",
+      "@type": "iot:Attribute",
+      "iot:actuator": true,
       "iot:purpose": "iot-purpose:cursor.up",
-      "iot:type": "iot:type.null",
       "iot:read": false,
+      "iot:sensor": true,
+      "iot:type": "iot:type.null",
       "iot:write": true,
-      "iot:sensor": false,
-      "iot:actuator": true
+      "schema:name": "cursor.up"
     },
     {
-      "@type": "iot:Attribute",
       "@id": "#on.false",
-      "schema:name": "on.false",
+      "@type": "iot:Attribute",
+      "iot:actuator": true,
       "iot:purpose": "iot-purpose:on.false",
-      "iot:type": "iot:type.null",
       "iot:read": false,
+      "iot:sensor": true,
+      "iot:type": "iot:type.null",
       "iot:write": true,
-      "iot:sensor": false,
-      "iot:actuator": true
+      "schema:name": "on.false"
     },
     {
-      "@type": "iot:Attribute",
       "@id": "#on.toggle",
-      "schema:name": "on.toggle",
+      "@type": "iot:Attribute",
+      "iot:actuator": true,
       "iot:purpose": "iot-purpose:on.toggle",
-      "iot:type": "iot:type.null",
       "iot:read": false,
+      "iot:sensor": true,
+      "iot:type": "iot:type.null",
       "iot:write": true,
-      "iot:sensor": false,
-      "iot:actuator": true
+      "schema:name": "on.toggle"
     },
     {
-      "@type": "iot:Attribute",
       "@id": "#on.true",
-      "schema:name": "on.true",
+      "@type": "iot:Attribute",
+      "iot:actuator": true,
       "iot:purpose": "iot-purpose:on.true",
-      "iot:type": "iot:type.null",
       "iot:read": false,
+      "iot:sensor": true,
+      "iot:type": "iot:type.null",
       "iot:write": true,
-      "iot:sensor": false,
-      "iot:actuator": true
+      "schema:name": "on.true"
     },
     {
-      "@type": "iot:Attribute",
       "@id": "#shuttle.backward",
-      "schema:name": "shuttle.backward",
+      "@type": "iot:Attribute",
+      "iot:actuator": true,
       "iot:purpose": "iot-purpose:shuttle.backward",
-      "iot:type": "iot:type.null",
       "iot:read": false,
+      "iot:sensor": true,
+      "iot:type": "iot:type.null",
       "iot:write": true,
-      "iot:sensor": false,
-      "iot:actuator": true
+      "schema:name": "shuttle.backward"
     },
     {
-      "@type": "iot:Attribute",
       "@id": "#shuttle.forward",
-      "schema:name": "shuttle.forward",
+      "@type": "iot:Attribute",
+      "iot:actuator": true,
       "iot:purpose": "iot-purpose:shuttle.forward",
-      "iot:type": "iot:type.null",
       "iot:read": false,
+      "iot:sensor": true,
+      "iot:type": "iot:type.null",
       "iot:write": true,
-      "iot:sensor": false,
-      "iot:actuator": true
+      "schema:name": "shuttle.forward"
     },
     {
-      "@type": "iot:Attribute",
       "@id": "#shuttle.pause",
-      "schema:name": "shuttle.pause",
+      "@type": "iot:Attribute",
+      "iot:actuator": true,
       "iot:purpose": "iot-purpose:shuttle.pause",
-      "iot:type": "iot:type.null",
       "iot:read": false,
+      "iot:sensor": true,
+      "iot:type": "iot:type.null",
       "iot:write": true,
-      "iot:sensor": false,
-      "iot:actuator": true
+      "schema:name": "shuttle.pause"
     },
     {
-      "@type": "iot:Attribute",
       "@id": "#shuttle.play",
-      "schema:name": "shuttle.play",
+      "@type": "iot:Attribute",
+      "iot:actuator": true,
       "iot:purpose": "iot-purpose:shuttle.play",
-      "iot:type": "iot:type.null",
       "iot:read": false,
+      "iot:sensor": true,
+      "iot:type": "iot:type.null",
       "iot:write": true,
-      "iot:sensor": false,
-      "iot:actuator": true
+      "schema:name": "shuttle.play"
     },
     {
-      "@type": "iot:Attribute",
       "@id": "#shuttle.stop",
-      "schema:name": "shuttle.stop",
+      "@type": "iot:Attribute",
+      "iot:actuator": true,
       "iot:purpose": "iot-purpose:shuttle.stop",
-      "iot:type": "iot:type.null",
       "iot:read": false,
+      "iot:sensor": true,
+      "iot:type": "iot:type.null",
       "iot:write": true,
-      "iot:sensor": false,
-      "iot:actuator": true
+      "schema:name": "shuttle.stop"
     },
     {
-      "@type": "iot:Attribute",
       "@id": "#tray.toggle",
-      "schema:name": "tray.toggle",
+      "@type": "iot:Attribute",
+      "iot:actuator": true,
       "iot:purpose": "iot-purpose:tray.toggle",
-      "iot:type": "iot:type.null",
       "iot:read": false,
+      "iot:sensor": true,
+      "iot:type": "iot:type.null",
       "iot:write": true,
-      "iot:sensor": false,
-      "iot:actuator": true
+      "schema:name": "tray.toggle"
     },
     {
-      "@type": "iot:Attribute",
       "@id": "#volume.down",
-      "schema:name": "volume.down",
+      "@type": "iot:Attribute",
+      "iot:actuator": true,
       "iot:purpose": "iot-purpose:volume.down",
-      "iot:type": "iot:type.null",
       "iot:read": false,
+      "iot:sensor": true,
+      "iot:type": "iot:type.null",
       "iot:write": true,
-      "iot:sensor": false,
-      "iot:actuator": true
+      "schema:name": "volume.down"
     },
     {
-      "@type": "iot:Attribute",
       "@id": "#volume.up",
-      "schema:name": "volume.up",
+      "@type": "iot:Attribute",
+      "iot:actuator": true,
       "iot:purpose": "iot-purpose:volume.up",
-      "iot:type": "iot:type.null",
       "iot:read": false,
+      "iot:sensor": true,
+      "iot:type": "iot:type.null",
       "iot:write": true,
-      "iot:sensor": false,
-      "iot:actuator": true
+      "schema:name": "volume.up"
     },
     {
-      "@type": "iot:Attribute",
       "@id": "#band",
-      "schema:name": "band",
-      "iot:purpose": "iot-purpose:band",
-      "iot:type": "iot:type.string",
+      "@type": "iot:Attribute",
+      "iot:actuator": true,
       "iot:enumeration": [
         "iot-purpose:band.antenna",
         "iot-purpose:band.component#1",
@@ -273,10 +270,14 @@
         "iot-purpose:band.video#4",
         "iot-purpose:band.video#5"
       ],
+      "iot:purpose": "iot-purpose:band",
       "iot:read": true,
-      "iot:write": true,
       "iot:sensor": true,
-      "iot:actuator": true
+      "iot:type": "iot:type.string",
+      "iot:write": true,
+      "schema:name": "band"
     }
-  ]
+  ],
+  "iot:model-id": "irlgtv",
+  "schema:name": "IR LG TV"
 }
