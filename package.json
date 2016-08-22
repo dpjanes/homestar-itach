@@ -8,7 +8,7 @@
         "iotdb-arp": "~0.0.6", 
         "node-itach": "~1.1.0"
     }, 
-    "description": "HomeStar / IOTDB Bridge for iTach IR Controllers", 
+    "description": "IOTDB Bridge for iTach IR Controllers", 
     "devDependencies": {
         "grunt": "~0.4.5", 
         "grunt-contrib-jshint": "~0.12.0", 
