@@ -23,7 +23,7 @@ cmdd["media.pause"] = cmdd["media.play"];
 
 exports.binding = {
     bridge: require('../ITachIRBridge').Bridge,
-    model: require('./IrSonyBdp.json'),
+    model: require('./ir-sony-bdp.json'),
     discover: false,
     metad: {
         "schema:name": "Sony BDP BluRay Player",

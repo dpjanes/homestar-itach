@@ -13,6 +13,6 @@ var _ = iotdb._;
 
 exports.binding = {
     bridge: require('../ITachIRBridge').Bridge,
-    model: require('./ITachIr.json'),
+    model: require('./i-tach-ir.json'),
     discover: false
 };

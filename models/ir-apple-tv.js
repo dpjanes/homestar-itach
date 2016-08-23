@@ -24,7 +24,7 @@ cmdd["shuttle.pause"] = cmdd["shuttle.play"];
 exports.binding = {
     bridge: require('../ITachIRBridge').Bridge,
     discover: false,
-    model: require('./IrAppleTv.json'),
+    model: require('./ir-apple-tv.json'),
     metad: {
         "schema:name": "Apple TV",
         "schema:model": "http://store.apple.com/ca/appletv",

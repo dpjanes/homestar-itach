@@ -50,11 +50,7 @@ var cmdd = {
 exports.binding = {
     bridge: require('../ITachIRBridge').Bridge,
     discover: false,
-    model: require('./Irlgtv.json'),
-    metad: {
-        // "schema:name": "",
-        // "schema:model": "",
-    },
+    model: require('./irlgtv.json'),
     connectd: {
         data_out: function (paramd) {
             var ir;
