@@ -6,10 +6,9 @@
 
 "use strict";
 
-var iotdb = require('iotdb');
-var iot = iotdb.iot();
+const iotdb = require('iotdb');
 
-var things = iot.connect('ITachIR');
+const things = iotdb.connect('ITachIR');
 things.on("istate", function (thing) {
     console.log("+", "istate", thing.thing_id(), "\n ", thing.state("istate"));
 });

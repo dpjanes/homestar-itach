@@ -6,15 +6,14 @@
 
 "use strict";
 
-var iotdb = require('iotdb');
-var iot = iotdb.iot();
+const iotdb = require('iotdb');
 
-var command = ":media.exit";
+const command = ":media.exit";
 if (process.argv.length > 2) {
     command = ":media." + process.argv[2];
 }
 
-var things = iot.connect('IRAppleTV');
+const things = iotdb.connect('IRAppleTV');
 things.on("thing", function (thing) {
     console.log("+", "discovered", thing.thing_id(), "\n ", thing.state("meta"));
 
