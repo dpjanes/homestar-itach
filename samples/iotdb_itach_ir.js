@@ -7,8 +7,9 @@
 "use strict";
 
 const iotdb = require('iotdb');
+iotdb.use("homestar-itach-ir")
 
-const things = iotdb.connect('ITachIR');
+const things = iotdb.connect('ir-itach');
 things.on("istate", function (thing) {
     console.log("+", "istate", thing.thing_id(), "\n ", thing.state("istate"));
 });

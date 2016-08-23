@@ -1,7 +1,7 @@
-var iotdb = require("iotdb");
-var _ = iotdb._;
+const iotdb = require("iotdb");
+const _ = iotdb._;
 
-var cmdd = require("./data/ir-lg-tv.json");
+const cmdd = require("./data/ir-lg-tv.json");
 
 exports.binding = {
     bridge: require('../ITachIRBridge').Bridge,

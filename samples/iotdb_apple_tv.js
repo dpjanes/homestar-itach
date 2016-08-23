@@ -7,6 +7,7 @@
 "use strict";
 
 const iotdb = require('iotdb');
+iotdb.use("homestar-itach-ir")
 
 const command = ":media.exit";
 if (process.argv.length > 2) {

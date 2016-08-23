@@ -8,8 +8,8 @@
  *  This will just send the "command"
  */
 
-var iotdb = require("iotdb");
-var _ = iotdb._;
+const iotdb = require("iotdb");
+const _ = iotdb._;
 
 exports.binding = {
     bridge: require('../ITachIRBridge').Bridge,

@@ -6,10 +6,10 @@
  *  2015-06-29
  */
 
-var iotdb = require("iotdb");
-var _ = iotdb._;
+const iotdb = require("iotdb");
+const _ = iotdb._;
 
-var cmdd = require("./data/ir-sony-bdp.json");
+const cmdd = require("./data/ir-sony-bdp.json");
 
 cmdd["media.pause"] = cmdd["media.play"];
 

@@ -27,5 +27,6 @@ exports.bindings = [
     require("./models/ir-apple-tv").binding,
     require("./models/ir-itach").binding,
     require("./models/ir-lg-tv").binding,
+    require("./models/ir-lg-tv-on").binding,
     require("./models/ir-sony-bdp").binding,
 ];
