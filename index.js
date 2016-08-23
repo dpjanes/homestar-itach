@@ -24,8 +24,8 @@
 
 exports.Bridge = require('./ITachIRBridge').Bridge;
 exports.bindings = [
-    require('./models/ITachIR').binding,
-    require('./models/IRAppleTV').binding,
-    require('./models/IRLGTV').binding,
-    require('./models/IRSonyBDP').binding,
+    require("./models/ir-apple-tv").binding,
+    require("./models/ir-itach").binding,
+    require("./models/ir-lg-tv").binding,
+    require("./models/ir-sony-bdp").binding,
 ];
