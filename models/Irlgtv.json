@@ -28,7 +28,8 @@
       "iot:purpose": "iot-purpose:channel.down",
       "iot:read": false,
       "iot:sensor": true,
-      "iot:type": "iot:type.null",
+      "iot:type": "iot:type.string",
+      "iot:instantaneous": true,
       "iot:write": true,
       "schema:name": "channel.down"
     },
@@ -39,7 +40,8 @@
       "iot:purpose": "iot-purpose:channel.return",
       "iot:read": false,
       "iot:sensor": true,
-      "iot:type": "iot:type.null",
+      "iot:type": "iot:type.string",
+      "iot:instantaneous": true,
       "iot:write": true,
       "schema:name": "channel.return"
     },
@@ -50,7 +52,8 @@
       "iot:purpose": "iot-purpose:channel.up",
       "iot:read": false,
       "iot:sensor": true,
-      "iot:type": "iot:type.null",
+      "iot:type": "iot:type.string",
+      "iot:instantaneous": true,
       "iot:write": true,
       "schema:name": "channel.up"
     },
@@ -61,7 +64,8 @@
       "iot:purpose": "iot-purpose:cursor.down",
       "iot:read": false,
       "iot:sensor": true,
-      "iot:type": "iot:type.null",
+      "iot:type": "iot:type.string",
+      "iot:instantaneous": true,
       "iot:write": true,
       "schema:name": "cursor.down"
     },
@@ -72,7 +76,8 @@
       "iot:purpose": "iot-purpose:cursor.enter",
       "iot:read": false,
       "iot:sensor": true,
-      "iot:type": "iot:type.null",
+      "iot:type": "iot:type.string",
+      "iot:instantaneous": true,
       "iot:write": true,
       "schema:name": "cursor.enter"
     },
@@ -83,7 +88,8 @@
       "iot:purpose": "iot-purpose:cursor.leave",
       "iot:read": false,
       "iot:sensor": true,
-      "iot:type": "iot:type.null",
+      "iot:type": "iot:type.string",
+      "iot:instantaneous": true,
       "iot:write": true,
       "schema:name": "cursor.leave"
     },
@@ -94,7 +100,8 @@
       "iot:purpose": "iot-purpose:cursor.left",
       "iot:read": false,
       "iot:sensor": true,
-      "iot:type": "iot:type.null",
+      "iot:type": "iot:type.string",
+      "iot:instantaneous": true,
       "iot:write": true,
       "schema:name": "cursor.left"
     },
@@ -105,7 +112,8 @@
       "iot:purpose": "iot-purpose:cursor.right",
       "iot:read": false,
       "iot:sensor": true,
-      "iot:type": "iot:type.null",
+      "iot:type": "iot:type.string",
+      "iot:instantaneous": true,
       "iot:write": true,
       "schema:name": "cursor.right"
     },
@@ -116,7 +124,8 @@
       "iot:purpose": "iot-purpose:cursor.up",
       "iot:read": false,
       "iot:sensor": true,
-      "iot:type": "iot:type.null",
+      "iot:type": "iot:type.string",
+      "iot:instantaneous": true,
       "iot:write": true,
       "schema:name": "cursor.up"
     },
@@ -127,7 +136,8 @@
       "iot:purpose": "iot-purpose:on.false",
       "iot:read": false,
       "iot:sensor": true,
-      "iot:type": "iot:type.null",
+      "iot:type": "iot:type.string",
+      "iot:instantaneous": true,
       "iot:write": true,
       "schema:name": "on.false"
     },
@@ -138,7 +148,8 @@
       "iot:purpose": "iot-purpose:on.toggle",
       "iot:read": false,
       "iot:sensor": true,
-      "iot:type": "iot:type.null",
+      "iot:type": "iot:type.string",
+      "iot:instantaneous": true,
       "iot:write": true,
       "schema:name": "on.toggle"
     },
@@ -149,7 +160,8 @@
       "iot:purpose": "iot-purpose:on.true",
       "iot:read": false,
       "iot:sensor": true,
-      "iot:type": "iot:type.null",
+      "iot:type": "iot:type.string",
+      "iot:instantaneous": true,
       "iot:write": true,
       "schema:name": "on.true"
     },
@@ -160,7 +172,8 @@
       "iot:purpose": "iot-purpose:shuttle.backward",
       "iot:read": false,
       "iot:sensor": true,
-      "iot:type": "iot:type.null",
+      "iot:type": "iot:type.string",
+      "iot:instantaneous": true,
       "iot:write": true,
       "schema:name": "shuttle.backward"
     },
@@ -171,7 +184,8 @@
       "iot:purpose": "iot-purpose:shuttle.forward",
       "iot:read": false,
       "iot:sensor": true,
-      "iot:type": "iot:type.null",
+      "iot:type": "iot:type.string",
+      "iot:instantaneous": true,
       "iot:write": true,
       "schema:name": "shuttle.forward"
     },
@@ -182,7 +196,8 @@
       "iot:purpose": "iot-purpose:shuttle.pause",
       "iot:read": false,
       "iot:sensor": true,
-      "iot:type": "iot:type.null",
+      "iot:type": "iot:type.string",
+      "iot:instantaneous": true,
       "iot:write": true,
       "schema:name": "shuttle.pause"
     },
@@ -193,7 +208,8 @@
       "iot:purpose": "iot-purpose:shuttle.play",
       "iot:read": false,
       "iot:sensor": true,
-      "iot:type": "iot:type.null",
+      "iot:type": "iot:type.string",
+      "iot:instantaneous": true,
       "iot:write": true,
       "schema:name": "shuttle.play"
     },
@@ -204,7 +220,8 @@
       "iot:purpose": "iot-purpose:shuttle.stop",
       "iot:read": false,
       "iot:sensor": true,
-      "iot:type": "iot:type.null",
+      "iot:type": "iot:type.string",
+      "iot:instantaneous": true,
       "iot:write": true,
       "schema:name": "shuttle.stop"
     },
@@ -215,7 +232,8 @@
       "iot:purpose": "iot-purpose:tray.toggle",
       "iot:read": false,
       "iot:sensor": true,
-      "iot:type": "iot:type.null",
+      "iot:type": "iot:type.string",
+      "iot:instantaneous": true,
       "iot:write": true,
       "schema:name": "tray.toggle"
     },
@@ -226,7 +244,8 @@
       "iot:purpose": "iot-purpose:volume.down",
       "iot:read": false,
       "iot:sensor": true,
-      "iot:type": "iot:type.null",
+      "iot:type": "iot:type.string",
+      "iot:instantaneous": true,
       "iot:write": true,
       "schema:name": "volume.down"
     },
@@ -237,7 +256,8 @@
       "iot:purpose": "iot-purpose:volume.up",
       "iot:read": false,
       "iot:sensor": true,
-      "iot:type": "iot:type.null",
+      "iot:type": "iot:type.string",
+      "iot:instantaneous": true,
       "iot:write": true,
       "schema:name": "volume.up"
     },
