@@ -1,4 +1,4 @@
-CREATE MODEL Irlgtv WITH
+CREATE MODEL IRLgTv WITH
     schema:name = "IR LG TV"
 ATTRIBUTE "channel.down" WITH
     schema:name = "channel.down",

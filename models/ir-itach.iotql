@@ -1,5 +1,5 @@
-CREATE MODEL ITachIr WITH
-    schema:name = "ITachIR",
+CREATE MODEL IRItach WITH
+    schema:name = "IRItach",
     schema:description = "iTach IR Controller",
     iot:facet = iot-facet:bridge,
     iot:facet = iot-facet:bridge.ir

@@ -1,7 +1,7 @@
 {
   "@context": {
-    "@base": "file:///i-tach-ir",
-    "@vocab": "file:///i-tach-ir#",
+    "@base": "file:///ir-itach",
+    "@vocab": "file:///ir-itach#",
     "iot": "https://iotdb.org/pub/iot#",
     "iot-purpose": "https://iotdb.org/pub/iot-purpose#",
     "iot:purpose": {
@@ -38,7 +38,7 @@
     "iot-facet:bridge",
     "iot-facet:bridge.ir"
   ],
-  "iot:model-id": "i-tach-ir",
+  "iot:model-id": "ir-itach",
   "schema:description": "iTach IR Controller",
-  "schema:name": "ITachIR"
+  "schema:name": "IRItach"
 }
