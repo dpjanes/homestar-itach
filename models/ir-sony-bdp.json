@@ -1,0 +1,165 @@
+{
+  "@context": {
+    "@base": "file:///ir-sony-bdp",
+    "@vocab": "file:///ir-sony-bdp#",
+    "iot": "https://iotdb.org/pub/iot#",
+    "iot-purpose": "https://iotdb.org/pub/iot-purpose#",
+    "iot:purpose": {
+      "@id": "https://iotdb.org/pub/iot#purpose",
+      "@type": "@id"
+    },
+    "iot:type": {
+      "@id": "https://iotdb.org/pub/iot#type",
+      "@type": "@id"
+    },
+    "schema": "http://schema.org/",
+    "iot-facet": "https://iotdb.org/pub/iot-facet#",
+    "iot:facet": {
+      "@id": "https://iotdb.org/pub/iot#facet",
+      "@type": "@id"
+    }
+  },
+  "@id": "",
+  "@type": "iot:Model",
+  "iot:attribute": [
+    {
+      "@id": "#cursor.down",
+      "@type": "iot:Attribute",
+      "iot:actuator": true,
+      "iot:purpose": "iot-purpose:cursor.down",
+      "iot:read": false,
+      "iot:sensor": true,
+      "iot:type": "iot:type.string",
+      "iot:instantaneous": true,
+      "iot:write": true,
+      "schema:name": "cursor.down"
+    },
+    {
+      "@id": "#cursor.left",
+      "@type": "iot:Attribute",
+      "iot:actuator": true,
+      "iot:purpose": "iot-purpose:cursor.left",
+      "iot:read": false,
+      "iot:sensor": true,
+      "iot:type": "iot:type.string",
+      "iot:instantaneous": true,
+      "iot:write": true,
+      "schema:name": "cursor.left"
+    },
+    {
+      "@id": "#cursor.right",
+      "@type": "iot:Attribute",
+      "iot:actuator": true,
+      "iot:purpose": "iot-purpose:cursor.right",
+      "iot:read": false,
+      "iot:sensor": true,
+      "iot:type": "iot:type.string",
+      "iot:instantaneous": true,
+      "iot:write": true,
+      "schema:name": "cursor.right"
+    },
+    {
+      "@id": "#cursor.up",
+      "@type": "iot:Attribute",
+      "iot:actuator": true,
+      "iot:purpose": "iot-purpose:cursor.up",
+      "iot:read": false,
+      "iot:sensor": true,
+      "iot:type": "iot:type.string",
+      "iot:instantaneous": true,
+      "iot:write": true,
+      "schema:name": "cursor.up"
+    },
+    {
+      "@id": "#cursor.enter",
+      "@type": "iot:Attribute",
+      "iot:actuator": true,
+      "iot:purpose": "iot-purpose:cursor.enter",
+      "iot:read": false,
+      "iot:sensor": true,
+      "iot:type": "iot:type.string",
+      "iot:instantaneous": true,
+      "iot:write": true,
+      "schema:name": "cursor.enter"
+    },
+    {
+      "@id": "#cursor.exit",
+      "@type": "iot:Attribute",
+      "iot:actuator": true,
+      "iot:purpose": "iot-purpose:cursor.exit",
+      "iot:read": false,
+      "iot:sensor": true,
+      "iot:type": "iot:type.string",
+      "iot:instantaneous": true,
+      "iot:write": true,
+      "schema:name": "cursor.exit"
+    },
+    {
+      "@id": "#shuttle.play",
+      "@type": "iot:Attribute",
+      "iot:actuator": true,
+      "iot:purpose": "iot-purpose:shuttle.play",
+      "iot:read": false,
+      "iot:sensor": true,
+      "iot:type": "iot:type.string",
+      "iot:instantaneous": true,
+      "iot:write": true,
+      "schema:name": "shuttle.play"
+    },
+    {
+      "@id": "#shuttle.pause",
+      "@type": "iot:Attribute",
+      "iot:actuator": true,
+      "iot:purpose": "iot-purpose:shuttle.pause",
+      "iot:read": false,
+      "iot:sensor": true,
+      "iot:type": "iot:type.string",
+      "iot:instantaneous": true,
+      "iot:write": true,
+      "schema:name": "shuttle.pause"
+    },
+    {
+      "@id": "#shuttle.stop",
+      "@type": "iot:Attribute",
+      "iot:actuator": true,
+      "iot:purpose": "iot-purpose:shuttle.stop",
+      "iot:read": false,
+      "iot:sensor": true,
+      "iot:type": "iot:type.string",
+      "iot:instantaneous": true,
+      "iot:write": true,
+      "schema:name": "shuttle.stop"
+    },
+    {
+      "@id": "#tray.open",
+      "@type": "iot:Attribute",
+      "iot:actuator": true,
+      "iot:purpose": "iot-purpose:tray.open",
+      "iot:read": false,
+      "iot:sensor": true,
+      "iot:type": "iot:type.string",
+      "iot:instantaneous": true,
+      "iot:write": true,
+      "schema:name": "tray.open"
+    },
+    {
+      "@id": "#tray.close",
+      "@type": "iot:Attribute",
+      "iot:actuator": true,
+      "iot:purpose": "iot-purpose:tray.close",
+      "iot:read": false,
+      "iot:sensor": true,
+      "iot:type": "iot:type.string",
+      "iot:instantaneous": true,
+      "iot:write": true,
+      "schema:name": "tray.close"
+    }
+  ],
+  "iot:facet": [
+    "iot-facet:media",
+    "iot-facet:media.bluray"
+  ],
+  "iot:model-id": "ir-sony-bdp",
+  "schema:description": "Sony BDP* via IR channel",
+  "schema:name": "IR Sony BDP"
+}

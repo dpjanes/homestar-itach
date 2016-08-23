@@ -1,0 +1,124 @@
+{
+  "@context": {
+    "@base": "file:///ir-apple-tv",
+    "@vocab": "file:///ir-apple-tv#",
+    "iot": "https://iotdb.org/pub/iot#",
+    "iot-purpose": "https://iotdb.org/pub/iot-purpose#",
+    "iot:purpose": {
+      "@id": "https://iotdb.org/pub/iot#purpose",
+      "@type": "@id"
+    },
+    "iot:type": {
+      "@id": "https://iotdb.org/pub/iot#type",
+      "@type": "@id"
+    },
+    "schema": "http://schema.org/",
+    "iot-facet": "https://iotdb.org/pub/iot-facet#",
+    "iot:facet": {
+      "@id": "https://iotdb.org/pub/iot#facet",
+      "@type": "@id"
+    }
+  },
+  "@id": "",
+  "@type": "iot:Model",
+  "iot:attribute": [
+    {
+      "@id": "#cursor.down",
+      "@type": "iot:Attribute",
+      "iot:actuator": true,
+      "iot:purpose": "iot-purpose:cursor.down",
+      "iot:read": false,
+      "iot:sensor": true,
+      "iot:type": "iot:type.string",
+      "iot:instantaneous": true,
+      "iot:write": true,
+      "schema:name": "cursor.down"
+    },
+    {
+      "@id": "#cursor.left",
+      "@type": "iot:Attribute",
+      "iot:actuator": true,
+      "iot:purpose": "iot-purpose:cursor.left",
+      "iot:read": false,
+      "iot:sensor": true,
+      "iot:type": "iot:type.string",
+      "iot:instantaneous": true,
+      "iot:write": true,
+      "schema:name": "cursor.left"
+    },
+    {
+      "@id": "#cursor.right",
+      "@type": "iot:Attribute",
+      "iot:actuator": true,
+      "iot:purpose": "iot-purpose:cursor.right",
+      "iot:read": false,
+      "iot:sensor": true,
+      "iot:type": "iot:type.string",
+      "iot:instantaneous": true,
+      "iot:write": true,
+      "schema:name": "cursor.right"
+    },
+    {
+      "@id": "#cursor.up",
+      "@type": "iot:Attribute",
+      "iot:actuator": true,
+      "iot:purpose": "iot-purpose:cursor.up",
+      "iot:read": false,
+      "iot:sensor": true,
+      "iot:type": "iot:type.string",
+      "iot:write": true,
+      "schema:name": "cursor.up"
+    },
+    {
+      "@id": "#cursor.enter",
+      "@type": "iot:Attribute",
+      "iot:actuator": true,
+      "iot:purpose": "iot-purpose:cursor.enter",
+      "iot:read": false,
+      "iot:sensor": true,
+      "iot:type": "iot:type.string",
+      "iot:write": true,
+      "schema:name": "cursor.enter"
+    },
+    {
+      "@id": "#cursor.leave",
+      "@type": "iot:Attribute",
+      "iot:actuator": true,
+      "iot:purpose": "iot-purpose:cursor.leave",
+      "iot:read": false,
+      "iot:sensor": true,
+      "iot:type": "iot:type.string",
+      "iot:write": true,
+      "schema:name": "cursor.leave"
+    },
+    {
+      "@id": "#shuttle.play",
+      "@type": "iot:Attribute",
+      "iot:actuator": true,
+      "iot:purpose": "iot-purpose:shuttle.play",
+      "iot:read": false,
+      "iot:sensor": true,
+      "iot:type": "iot:type.string",
+      "iot:write": true,
+      "schema:name": "shuttle.play"
+    },
+    {
+      "@id": "#shuttle.pause",
+      "@type": "iot:Attribute",
+      "iot:actuator": true,
+      "iot:purpose": "iot-purpose:shuttle.pause",
+      "iot:read": false,
+      "iot:sensor": true,
+      "iot:type": "iot:type.string",
+      "iot:write": true,
+      "schema:name": "shuttle.pause"
+    }
+  ],
+  "iot:facet": [
+    "iot-facet:bridge",
+    "iot-facet:bridge.media"
+  ],
+  "iot:model-id": "ir-apple-tv",
+  "schema:description": "Apple TV via IR channel",
+  "schema:name": "IR Apple TV"
+}
