@@ -1,7 +1,7 @@
 {
   "@context": {
-    "@base": "file:///irlgtv",
-    "@vocab": "file:///irlgtv#",
+    "@base": "file:///ir-lg-tv",
+    "@vocab": "file:///ir-lg-tv#",
     "iot": "https://iotdb.org/pub/iot#",
     "iot-purpose": "https://iotdb.org/pub/iot-purpose#",
     "iot:purpose": {
@@ -291,6 +291,6 @@
       "schema:name": "band"
     }
   ],
-  "iot:model-id": "irlgtv",
+  "iot:model-id": "ir-lg-tv",
   "schema:name": "IR LG TV"
 }
