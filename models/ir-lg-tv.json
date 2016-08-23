@@ -16,6 +16,11 @@
     "iot:enumeration": {
       "@id": "https://iotdb.org/pub/iot#enumeration",
       "@type": "@id"
+    },
+    "iot-facet": "https://iotdb.org/pub/iot-facet#",
+    "iot:facet": {
+      "@id": "https://iotdb.org/pub/iot#facet",
+      "@type": "@id"
     }
   },
   "@id": "",
@@ -290,6 +295,10 @@
       "iot:write": true,
       "schema:name": "band"
     }
+  ],
+  "iot:facet": [
+    "iot-facet:media",
+    "iot-facet:media.tv"
   ],
   "iot:model-id": "ir-lg-tv",
   "schema:name": "IR LG TV"

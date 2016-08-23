@@ -1,5 +1,7 @@
 CREATE MODEL IRLgTv WITH
-    schema:name = "IR LG TV"
+    schema:name = "IR LG TV",
+    iot:facet = iot-facet:media,
+    iot:facet = iot-facet:media.tv
 ATTRIBUTE "channel.down" WITH
     schema:name = "channel.down",
     iot:purpose = iot-purpose:channel.down,

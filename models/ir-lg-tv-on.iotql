@@ -1,0 +1,12 @@
+CREATE MODEL IRLgTvOn WITH
+    schema:name = "IR LG TV On",
+    iot:facet = iot-facet:media,
+    iot:facet = iot-facet:media.tv
+ATTRIBUTE "on.true" WITH
+    schema:name = "on.true",
+    iot:purpose = iot-purpose:on.true,
+    iot:instantaneous = true,
+    iot:type = iot:type.string,
+    iot:read = false,
+    iot:write = true
+;

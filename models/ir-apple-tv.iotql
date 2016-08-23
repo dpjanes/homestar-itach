@@ -1,8 +1,7 @@
 CREATE MODEL IrAppleTv WITH
     schema:name = "IR Apple TV",
     schema:description = "Apple TV via IR channel",
-    iot:facet = iot-facet:bridge,
-    iot:facet = iot-facet:bridge.media
+    iot:facet = iot-facet:media
 ATTRIBUTE "cursor.down" WITH
     schema:name = "cursor.down",
     iot:purpose = iot-purpose:cursor.down,

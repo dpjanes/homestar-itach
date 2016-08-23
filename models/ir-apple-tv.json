@@ -119,10 +119,7 @@
       "schema:name": "shuttle.pause"
     }
   ],
-  "iot:facet": [
-    "iot-facet:bridge",
-    "iot-facet:bridge.media"
-  ],
+  "iot:facet": "iot-facet:media",
   "iot:model-id": "ir-apple-tv",
   "schema:description": "Apple TV via IR channel",
   "schema:name": "IR Apple TV"

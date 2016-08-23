@@ -1,0 +1,44 @@
+{
+  "@context": {
+    "@base": "file:///ir-lg-tv-on",
+    "@vocab": "file:///ir-lg-tv-on#",
+    "iot": "https://iotdb.org/pub/iot#",
+    "iot-purpose": "https://iotdb.org/pub/iot-purpose#",
+    "iot:purpose": {
+      "@id": "https://iotdb.org/pub/iot#purpose",
+      "@type": "@id"
+    },
+    "iot:type": {
+      "@id": "https://iotdb.org/pub/iot#type",
+      "@type": "@id"
+    },
+    "schema": "http://schema.org/",
+    "iot-facet": "https://iotdb.org/pub/iot-facet#",
+    "iot:facet": {
+      "@id": "https://iotdb.org/pub/iot#facet",
+      "@type": "@id"
+    }
+  },
+  "@id": "",
+  "@type": "iot:Model",
+  "iot:attribute": [
+    {
+      "@id": "#on.true",
+      "@type": "iot:Attribute",
+      "iot:actuator": true,
+      "iot:instantaneous": true,
+      "iot:purpose": "iot-purpose:on.true",
+      "iot:read": false,
+      "iot:sensor": true,
+      "iot:type": "iot:type.string",
+      "iot:write": true,
+      "schema:name": "on.true"
+    }
+  ],
+  "iot:facet": [
+    "iot-facet:media",
+    "iot-facet:media.tv"
+  ],
+  "iot:model-id": "ir-lg-tv-on",
+  "schema:name": "IR LG TV On"
+}
