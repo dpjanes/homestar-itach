@@ -69,10 +69,6 @@ var ITachIRBridge = function (initd, native) {
 
 ITachIRBridge.prototype = new iotdb.Bridge();
 
-ITachIRBridge.prototype.name = function () {
-    return "ITachIRBridge";
-};
-
 /* --- lifecycle --- */
 
 /**

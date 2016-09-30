@@ -9,4 +9,11 @@ ATTRIBUTE "on.true" WITH
     iot:type = iot:type.string,
     iot:read = false,
     iot:write = true
+ATTRIBUTE "on.false" WITH
+    schema:name = "on.false",
+    iot:purpose = iot-purpose:on.false,
+    iot:instantaneous = true,
+    iot:type = iot:type.string,
+    iot:read = false,
+    iot:write = true
 ;

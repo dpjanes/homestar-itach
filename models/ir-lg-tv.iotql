@@ -47,6 +47,7 @@ ATTRIBUTE "cursor.leave" WITH
 ATTRIBUTE "cursor.left" WITH
     schema:name = "cursor.left",
     iot:purpose = iot-purpose:cursor.left,
+    iot:instantaneous = true,
     iot:type = iot:type.string,
     iot:read = false,
     iot:write = true
@@ -67,6 +68,7 @@ ATTRIBUTE "cursor.up" WITH
 ATTRIBUTE "on.false" WITH
     schema:name = "on.false",
     iot:purpose = iot-purpose:on.false,
+    iot:instantaneous = true,
     iot:type = iot:type.string,
     iot:read = false,
     iot:write = true
@@ -108,58 +110,69 @@ ATTRIBUTE "shuttle.pause" WITH
 ATTRIBUTE "shuttle.play" WITH
     schema:name = "shuttle.play",
     iot:purpose = iot-purpose:shuttle.play,
+    iot:instantaneous = true,
     iot:type = iot:type.string,
     iot:read = false,
     iot:write = true
 ATTRIBUTE "shuttle.stop" WITH
     schema:name = "shuttle.stop",
     iot:purpose = iot-purpose:shuttle.stop,
+    iot:instantaneous = true,
     iot:type = iot:type.string,
     iot:read = false,
     iot:write = true
 ATTRIBUTE "tray.toggle" WITH
     schema:name = "tray.toggle",
     iot:purpose = iot-purpose:tray.toggle,
+    iot:instantaneous = true,
     iot:type = iot:type.string,
     iot:read = false,
     iot:write = true
 ATTRIBUTE "volume.down" WITH
     schema:name = "volume.down",
     iot:purpose = iot-purpose:volume.down,
+    iot:instantaneous = true,
     iot:type = iot:type.string,
     iot:read = false,
     iot:write = true
 ATTRIBUTE "volume.up" WITH
     schema:name = "volume.up",
     iot:purpose = iot-purpose:volume.up,
+    iot:instantaneous = true,
     iot:type = iot:type.string,
     iot:read = false,
     iot:write = true
 ATTRIBUTE band WITH
     schema:name = "band",
     iot:purpose = iot-purpose:band,
+    iot:instantaneous = true,
     iot:type = iot:type.string,
+    iot:read = false,
+    iot:write = true,
     iot:enumeration = iot-purpose:band.antenna,
-    iot:enumeration = iot-purpose:band.component#1,
-    iot:enumeration = iot-purpose:band.component#2,
-    iot:enumeration = iot-purpose:band.component#3,
+    iot:enumeration = iot-purpose:band.component,
+    iot:enumeration = "iot-purpose:band.component.1",
+    iot:enumeration = "iot-purpose:band.component.2",
+    iot:enumeration = "iot-purpose:band.component.3",
     iot:enumeration = iot-purpose:band.dvi,
-    iot:enumeration = iot-purpose:band.hdmi#1,
-    iot:enumeration = iot-purpose:band.hdmi#2,
-    iot:enumeration = iot-purpose:band.hdmi#3,
-    iot:enumeration = iot-purpose:band.hdmi#4,
+    iot:enumeration = iot-purpose:band.hdmi,
+    iot:enumeration = "iot-purpose:band.hdmi.1",
+    iot:enumeration = "iot-purpose:band.hdmi.2",
+    iot:enumeration = "iot-purpose:band.hdmi.3",
+    iot:enumeration = "iot-purpose:band.hdmi.4",
     iot:enumeration = iot-purpose:band.pc,
     iot:enumeration = iot-purpose:band.rgb,
-    iot:enumeration = iot-purpose:band.rgb#1,
-    iot:enumeration = iot-purpose:band.rgb#2,
+    iot:enumeration = "iot-purpose:band.rgb.1",
+    iot:enumeration = "iot-purpose:band.rgb.2",
     iot:enumeration = iot-purpose:band.s-video,
-    iot:enumeration = iot-purpose:band.s-video#1,
-    iot:enumeration = iot-purpose:band.s-video#2,
+    iot:enumeration = "iot-purpose:band.s-video.1",
+    iot:enumeration = "iot-purpose:band.s-video.2",
     iot:enumeration = iot-purpose:band.tv,
     iot:enumeration = iot-purpose:band.usb,
-    iot:enumeration = iot-purpose:band.video#1,
-    iot:enumeration = iot-purpose:band.video#2,
-    iot:enumeration = iot-purpose:band.video#3,
-    iot:enumeration = iot-purpose:band.video#4,
-    iot:enumeration = iot-purpose:band.video#5
+    iot:enumeration = iot-purpose:band.video,
+    iot:enumeration = "iot-purpose:band.video.1",
+    iot:enumeration = "iot-purpose:band.video.2",
+    iot:enumeration = "iot-purpose:band.video.3",
+    iot:enumeration = "iot-purpose:band.video.4",
+    iot:enumeration = "iot-purpose:band.video.5"
 ;
