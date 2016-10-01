@@ -9,14 +9,14 @@
 const iotdb = require("iotdb");
 const _ = iotdb._;
 
-const cmdd = require("./data/ir-apple-tv.json")
+const cmdd = require("../data/ir-apple-tv.json")
 
 cmdd["shuttle.pause"] = cmdd["shuttle.play"];
 
 exports.binding = {
-    bridge: require('../ITachIRBridge').Bridge,
+    bridge: require('../../ITachIRBridge').Bridge,
     discover: false,
-    model: require('./ir-apple-tv.json'),
+    model: require("./model.json"),
     metad: {
         "schema:name": "Apple TV",
         "schema:model": "http://store.apple.com/ca/appletv",

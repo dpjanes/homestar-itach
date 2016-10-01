@@ -9,13 +9,13 @@
 const iotdb = require("iotdb");
 const _ = iotdb._;
 
-const cmdd = require("./data/ir-sony-bdp.json");
+const cmdd = require("../data/ir-sony-bdp.json");
 
 cmdd["media.pause"] = cmdd["media.play"];
 
 exports.binding = {
-    bridge: require('../ITachIRBridge').Bridge,
-    model: require('./ir-sony-bdp.json'),
+    bridge: require('../../ITachIRBridge').Bridge,
+    model: require("./model.json"),
     discover: false,
     metad: {
         "schema:name": "Sony BDP BluRay Player",

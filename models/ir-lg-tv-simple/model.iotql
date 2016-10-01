@@ -1,4 +1,4 @@
-CREATE MODEL IRLgTvOn WITH
+CREATE MODEL IRLgTvSimple WITH
     schema:name = "IR LG TV On",
     iot:facet = iot-facet:media,
     iot:facet = iot-facet:media.tv
