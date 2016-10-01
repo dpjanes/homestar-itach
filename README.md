@@ -7,6 +7,12 @@ This will let you send IR commands to devices.
 
 * [Read about Bridges](https://github.com/dpjanes/node-iotdb/blob/master/docs/bridges.md)
 
+## Links
+
+* [http://www.globalcache.com/products/itach/wf2irspecs/](Global Cache iTach)
+* [https://irdb.globalcache.com/](IR codes)
+
+
 # Installation
 
 * [Read this first](https://github.com/dpjanes/node-iotdb/blob/master/docs/install.md)
