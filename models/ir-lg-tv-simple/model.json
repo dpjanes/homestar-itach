@@ -1,7 +1,7 @@
 {
   "@context": {
-    "@base": "file:///ir-lg-tv-on",
-    "@vocab": "file:///ir-lg-tv-on#",
+    "@base": "file:///ir-lg-tv-simple",
+    "@vocab": "file:///ir-lg-tv-simple#",
     "iot": "https://iotdb.org/pub/iot#",
     "iot-purpose": "https://iotdb.org/pub/iot-purpose#",
     "iot:purpose": {
@@ -51,6 +51,6 @@
     "iot-facet:media",
     "iot-facet:media.tv"
   ],
-  "iot:model-id": "ir-lg-tv-on",
+  "iot:model-id": "ir-lg-tv-simple",
   "schema:name": "IR LG TV On"
 }
